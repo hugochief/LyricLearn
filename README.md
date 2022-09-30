@@ -1,4 +1,4 @@
-LyricLearn is an English learning website based on the translation of song lyrics.
+LyricLearn is an English learning website for Portuguese speakers based on the translation of song lyrics.
 
 The use of subtitles makes it possible to acquire knowledge of the English language in an intuitive manner. 
 
