@@ -1,0 +1,193 @@
+<!doctype html>
+<html class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+	<script language="javascript">
+	
+	var theAnswers = new Array("like a fortress","feel safe","wander through","move on","fortress falls","how you rise","come through","always safe","truly know myself","as alone","awful truth","will you","fortress falls","how you rise","come through","always safe","The Earth","falls prey","under siege","You can","under siege","You can","fortress falls","how you rise","come through","always safe","always safe","always safe","Come on through","Come on through");
+var theScore = 0;
+
+function showAnswers() {
+    document.getElementById("help").style.visibility = "hidden";
+    for (x = 0; x < theAnswers.length; x++) {
+        if (document.getElementById(x)) {
+            document.getElementById(x).value = theAnswers[x];
+        }
+    }
+    document.getElementById("help").style.visibility = hidden;
+}
+
+function checkMe(n) {
+    if (document.getElementById("help").style.visibility != "hidden") {
+        if (document.getElementById(n).value.toLowerCase().replace(/[^a-z]/g, "") == theAnswers[n].toLowerCase().replace(/[^a-z]/g, "")) {
+            document.getElementById(n).style.background = "lightgreen";
+            var newText = document.createTextNode(theAnswers[n]);
+            document.getElementById(n).parentNode.insertBefore(newText, document.getElementById(n));
+            document.getElementById(n).parentNode.removeChild(document.getElementById(n));
+            theScore = theScore + 1;
+            var outOfTwenty = theScore + '' + '/' + theAnswers.length + '';
+            document.getElementById("score").textContent = outOfTwenty;
+            document.getElementById("score").innerText = outOfTwenty;
+        } else {
+            document.getElementById(n).style.background = "crimson";
+        }
+    }
+}
+	
+	</script>
+	
+	
+	<link rel="shortcut icon" href="new_logo_merged.svg"/>
+	<title>QOTSA - Fortress</title>
+</head>
+<body>
+    
+
+    
+<header class="cd-header">
+<a href="index.html"><img src="new_logo_merged.svg"></a>
+
+<div class="song-return">
+<h1><a href="translation_fortress.html">QOTSA - Fortress</a></h1>
+</div>
+
+</header>
+
+
+<div class="size_video">  
+
+	<video
+    id="vid1"
+    class="video-js vjs-theme-sea"
+    controls
+    autoplay
+    width="" height=""
+    data-setup='{"fill": true, "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://www.youtube.com/watch?v=dNwNSU5NikU"}], "youtube": { "iv_load_policy": 3 } }'
+  >
+  
+	<track kind='' src='vtt/fortress_en&pt.vtt' srclang='es' label='en&pt'/>
+	<track kind='' src='vtt/fortress_en.vtt' srclang='en' label='en'/>
+	<track kind='' src='vtt/fortress_pt.vtt' srclang='pt' label='pt'/>
+	</video>
+</div>
+
+<div class="table-wrapper-listening">
+	<div class="listening-text">
+		 <p>&nbsp;</p>
+		 <p>Your heart is <input name="0" type="text" class="boxes plus-as-tab" id="0" onBlur="checkMe(0)" size="15"/> </p>
+         <p>You keep your feelings locked away</p>
+         <p>Is it easier?</p>
+         <p>Does it make you <input name="1" type="text" class="boxes plus-as-tab" id="1" onBlur="checkMe(1)" size="9"/>?</p>
+         <p>&nbsp;</p>
+         <p>You <input name="2" type="text" class="boxes plus-as-tab" id="2" onBlur="checkMe(2)" size="14"/>  the darkness</p>
+         <p>Of wilderness behind your eyes</p>
+         <p>I know you're afraid</p>
+         <p>But you gotta <input name="3" type="text" class="boxes plus-as-tab" id="3" onBlur="checkMe(3)" size="7"/> </p>
+         <p>&nbsp;</p>
+         <p>Every <input name="4" type="text" class="boxes plus-as-tab" id="4" onBlur="checkMe(4)" size="14"/> </p>
+         <p>It is not the end</p>
+         <p>It ain&#39;t if you fall</p>
+         <p>But <input name="5" type="text" class="boxes plus-as-tab" id="5" onBlur="checkMe(5)" size="12"/>  that says</p>
+         <p>Who you really are</p>
+         <p>So get up and <input name="6" type="text" class="boxes plus-as-tab" id="6" onBlur="checkMe(6)" size="12"/> </p>
+         <p>If ever your fortress caves</p>
+         <p>You&#39;re <input name="7" type="text" class="boxes plus-as-tab" id="7" onBlur="checkMe(7)" size="11"/> </p>
+         <p>&nbsp;</p>
+         <p>I believe I know you</p>
+         <p>Yet I don&#39;t <input name="8" type="text" class="boxes plus-as-tab" id="8" onBlur="checkMe(8)" size="17"/> </p>
+         <p>I pray you won&#39;t feel <input name="9" type="text" class="boxes plus-as-tab" id="9" onBlur="checkMe(9)" size="8"/>  as I have felt</p>
+         <p>&nbsp;</p>
+         <p>I don&#39;t want to fail you so</p>
+         <p>I tell you the <input name="10" type="text" class="boxes plus-as-tab" id="10" onBlur="checkMe(10)" size="11"/> </p>
+         <p>Everyone faces darkness on their own</p>
+         <p>As I have done, so <input name="11" type="text" class="boxes plus-as-tab" id="11" onBlur="checkMe(11)" size="8"/> </p>
+         <p>&nbsp;</p>
+         <p>Every <input name="12" type="text" class="boxes plus-as-tab" id="12" onBlur="checkMe(12)" size="14"/> </p>
+         <p>It is not the end</p>
+         <p>It ain&#39;t if you fall</p>
+         <p>But <input name="13" type="text" class="boxes plus-as-tab" id="13" onBlur="checkMe(13)" size="12"/>  that says</p>
+         <p>Who you really are</p>
+         <p>So get up and <input name="14" type="text" class="boxes plus-as-tab" id="14" onBlur="checkMe(14)" size="12"/> </p>
+         <p>If ever your fortress caves</p>
+         <p>You&#39;re <input name="15" type="text" class="boxes plus-as-tab" id="15" onBlur="checkMe(15)" size="11"/>  in mine</p>
+         <p>&nbsp;</p>
+         <p><input name="16" type="text" class="boxes plus-as-tab" id="16" onBlur="checkMe(16)" size="9"/>  spins &#39;round the sun</p>
+         <p>And behold,</p>
+         <p>Everything happens</p>
+         <p>Every night <input name="17" type="text" class="boxes plus-as-tab" id="17" onBlur="checkMe(17)" size="10"/>  to sunrise</p>
+         <p>&nbsp;</p>
+         <p>If your fortress is <input name="18" type="text" class="boxes plus-as-tab" id="18" onBlur="checkMe(18)" size="11"/> </p>
+         <p><input name="19" type="text" class="boxes plus-as-tab" id="19" onBlur="checkMe(19)" size="7"/>  always run to me</p>
+         <p>If your fortress is <input name="20" type="text" class="boxes plus-as-tab" id="20" onBlur="checkMe(20)" size="11"/> </p>
+         <p><input name="21" type="text" class="boxes plus-as-tab" id="21" onBlur="checkMe(21)" size="7"/>  always run</p>
+         <p>&nbsp;</p>
+         <p>Every <input name="22" type="text" class="boxes plus-as-tab" id="22" onBlur="checkMe(22)" size="14"/> </p>
+         <p>It is not the end</p>
+         <p>It ain&#39;t if you fall</p>
+         <p>But <input name="23" type="text" class="boxes plus-as-tab" id="23" onBlur="checkMe(23)" size="12"/>  that says</p>
+         <p>Who you really are</p>
+         <p>So get up and <input name="24" type="text" class="boxes plus-as-tab" id="24" onBlur="checkMe(24)" size="12"/> </p>
+         <p>If ever your fortress caves</p>
+         <p>You&#39;re <input name="25" type="text" class="boxes plus-as-tab" id="25" onBlur="checkMe(25)" size="11"/>  in mine</p>
+         <p>If ever your fortress caves</p>
+         <p>You&#39;re <input name="26" type="text" class="boxes plus-as-tab" id="26" onBlur="checkMe(26)" size="11"/>  in mine</p>
+         <p>If ever your fortress caves</p>
+         <p>You&#39;re <input name="27" type="text" class="boxes plus-as-tab" id="27" onBlur="checkMe(27)" size="11"/>  in mine</p>
+         <p><input name="28" type="text" class="boxes plus-as-tab" id="28" onBlur="checkMe(28)" size="15"/> </p>
+         <p><input name="29" type="text" class="boxes plus-as-tab" id="29" onBlur="checkMe(29)" size="15"/> </p>
+	</div>
+
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<table width="160vmin" border="0" align="right">
+            <tr>
+               <td width="30%">
+                  <p style="color:#4B0082; font-weight: bold">SCORE:</p>
+                  <div id="score">&nbsp;</div>
+               </td>
+               <td width="14%">&nbsp;</td>
+               <td width="43%" align="">
+                  <p>         <input type="button" name="help" id="help" value="?" onClick="showAnswers();"/>       </p>
+               </td>
+            </tr>
+         </table>
+         <p>&nbsp;</p>
+		 <p>&nbsp;</p>
+		  <p>&nbsp;</p>
+		
+      </form>
+   
+
+</div>
+
+
+ 
+</body>
+
+
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/jquery.mixitup.min.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+<script src="js/video.min.js"></script>
+<script src="js/videojs-landscape-fullscreen.min.js"></script>
+<script>
+  var player = videojs('vid1');
+
+  player.landscapeFullscreen();
+  
+</script>
+  <script src="js/Youtube.min.js"></script>
+  
+
+<script src="js/emulatetab.joelpurra.js"></script>
+<script src="js/plusastab.joelpurra.js"></script>
+
+</body>
+</html>
