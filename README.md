@@ -4,4 +4,4 @@ The use of subtitles makes it possible to acquire knowledge of the English langu
 
 Songs from different genres were placed in a digital medium with the aim of sparking the students’ interest.
 
-It also contains some fun interactive activities to boost the assimilation of English knowledge by getting the user to actively use the language.
+It also contains some fun interactive activities to boost the assimilation of English knowledge by getting the visitor to actively use the language.
